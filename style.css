@@ -42,27 +42,43 @@ section {
 }
 
 h1 {
-    color: #333;
+    margin-top: 0;
+}
+
+.plantas-grid, .vivero-grid, .articulos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.planta, .vivero-item, .articulo {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.planta img, .vivero-item img, .articulo img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.planta h2, .vivero-item h2, .articulo h2 {
     margin-top: 0;
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #333;
     color: #fff;
-    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #3e8e41;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1em;
-    text-align: center;
-    clear: both;
+    background-color: #444;
 }

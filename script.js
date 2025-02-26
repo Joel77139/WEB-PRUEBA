@@ -1,6 +1,5 @@
-// Agregar evento de clic a los botones
-document.querySelectorAll('button').forEach(button => {
+document.querySelectorAll('.planta button, .vivero-item button, .articulo button').forEach(button => {
     button.addEventListener('click', () => {
-        alert('¡Gracias por interesarte en la ecología y el reciclaje!');
+        alert('¡Gracias por tu compra!');
     });
 });
